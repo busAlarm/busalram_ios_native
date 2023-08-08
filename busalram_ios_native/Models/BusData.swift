@@ -25,17 +25,18 @@ extension BusData {
     static let colors: [String: Color] = [
         "24": .orange,
         "720-3": .green,
-        "shuttle": .blue
+        "shuttle": .blue,
+        "셔틀": .blue,
     ]
     
     static func getBusColor(name: String) -> Color {
         switch name {
         case "24":
-            return .orange
+            return colors[name]!
         case "720-3":
-            return .green
+            return colors[name]!
         case "셔틀", "shuttle":
-            return .blue
+            return colors[name]!
         default:
             return .white
         }

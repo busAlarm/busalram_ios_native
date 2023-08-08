@@ -14,6 +14,9 @@ import SwiftUI
 // 현재 버스 (도착시간, 현재위치)
 // 다음 버스 (도착시간, 현재위치)
 // 운행 중 여부
+
+// * 앞으로 할만한 것
+// 버스 노선별 DetailView 구현하기
 // 곧도착 여부 (곧도착이면 AVFoundation으로 음성 안내)
 // 푸시알림 기능 구현하면 좋겠는데 이건 시간 남으면 더 해보자
 
@@ -21,9 +24,9 @@ struct BusView: View {
     @ObservedObject var busDataStore: BusDataStore
 
     @State var arrivalSoonBuses: [String: Bool] = [
-        "24": true,
-        "720-3": true,
-        "shuttle": true
+        "24": false,
+        "720-3": false,
+        "shuttle": false
     ]
 
     @State var isLoading: Bool = true
@@ -40,89 +43,87 @@ struct BusView: View {
                     isLoading.toggle()
                 }
         } else {
-            GeometryReader { _ in
-                NavigationStack {
-                    List {
-                        Section {
-                            VStack(alignment: .leading, spacing: 12) {
-                                Text("곧 도착하는 버스")
-                                    .font(.headline)
-                                    .fontWeight(.bold)
+            NavigationStack {
+                List {
+                    Section {
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("곧 도착하는 버스")
+                                .font(.headline)
+                                .fontWeight(.bold)
                                 
-                                if Array(arrivalSoonBuses.values).contains(where: {
-                                    $0 == true
-                                }) {
-                                    ScrollView(.horizontal, showsIndicators: false) {
-                                        HStack {
-                                            ForEach(Array(arrivalSoonBuses.keys), id: \.self) { key in
-                                                if arrivalSoonBuses[key]! {
-                                                    // 바깥쪽 윤곽선이랑 안쪽 배경은 따로따로 만들어줘야 한다!
-                                                    BusCardView(cardColor: BusData.getBusColor(name: key), innerText: BusData.getBusName(name: key))
-                                                }
+                            if Array(arrivalSoonBuses.values).contains(where: {
+                                $0 == true
+                            }) {
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack {
+                                        ForEach(Array(arrivalSoonBuses.keys), id: \.self) { key in
+                                            if arrivalSoonBuses[key]! {
+                                                // 바깥쪽 윤곽선이랑 안쪽 배경은 따로따로 만들어줘야 한다!
+                                                BusCardView(cardColor: BusData.getBusColor(name: key), innerText: BusData.getBusName(name: key))
                                             }
                                         }
                                     }
-                                } else {
-                                    Text("현재 도착 예정인 노선이 없습니다.")
                                 }
+                            } else {
+                                Text("현재 도착 예정인 노선이 없습니다.")
                             }
                         }
+                    }
                         
-                        Section {
-                            VStack(alignment: .leading, spacing: 30) {
-                                VStack(alignment: .leading, spacing: 8) {
-                                    Text("노선별 버스 도착정보")
-                                        .font(.headline)
-                                        .fontWeight(.bold)
+                    Section {
+                        VStack(alignment: .leading, spacing: 30) {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("노선별 버스 도착정보")
+                                    .font(.headline)
+                                    .fontWeight(.bold)
                                     
-                                    Text("최근 새로고침: \(busDataStore.recentRefreshTimeStamp)")
-                                        .font(.caption)
-                                        .foregroundColor(.gray)
-                                }
+                                Text("최근 새로고침: \(busDataStore.recentRefreshTimeStamp)")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
                                 
-                                Grid(horizontalSpacing: 20, verticalSpacing: 20) {
-                                    GridRow {
-                                        Text("노선명")
-                                            .fontWeight(.bold)
-                                            .frame(width: 80)
+                            Grid(horizontalSpacing: 20, verticalSpacing: 20) {
+                                GridRow {
+                                    Text("노선명")
+                                        .fontWeight(.bold)
+                                        .frame(width: 80)
 
-                                        Text("정류장 및 남은 시간")
-                                            .fontWeight(.bold)
-                                    }
+                                    Text("정류장 및 남은 시간")
+                                        .fontWeight(.bold)
+                                }
                                     
-                                    Divider()
+                                Divider()
                                     
-                                    ForEach(busDataStore.availableRoutes, id: \.self) { key in
-                                        let bus = busDataStore.busData[key]!
-                                        GridRow {
-                                            BusCardView(cardColor: BusData.getBusColor(name: bus.routeID), innerText: bus.routeID)
+                                ForEach(busDataStore.availableRoutes, id: \.self) { key in
+                                    let bus = busDataStore.busData[key]!
+                                    GridRow {
+                                        BusCardView(cardColor: BusData.getBusColor(name: bus.routeID), innerText: bus.routeID)
                                             
-                                            if !bus.isRunning {
-                                                Text("운행 정보 없음")
-                                                    .foregroundColor(.gray)
-                                            } else if bus.predictTime1 == "" && bus.predictTime2 == "" {
-                                                Text("운행 정보 없음")
-                                                    .foregroundColor(.gray)
-                                            } else {
-                                                VStack(spacing: 4) {
-                                                    Text(bus.stationNm1)
-                                                        .font(.caption)
+                                        if !bus.isRunning {
+                                            Text("운행 정보 없음")
+                                                .foregroundColor(.gray)
+                                        } else if bus.predictTime1 == "" && bus.predictTime2 == "" {
+                                            Text("운행 정보 없음")
+                                                .foregroundColor(.gray)
+                                        } else {
+                                            VStack(spacing: 4) {
+                                                Text(bus.stationNm1)
+                                                    .font(.caption)
                                                     
-                                                    if bus.predictTime1 != "" {
-                                                        Text("\(bus.predictTime1)분 후")
-                                                            .foregroundColor(.red)
-                                                    }
+                                                if bus.predictTime1 != "" {
+                                                    Text("\(bus.predictTime1)분 후")
+                                                        .foregroundColor(.red)
+                                                }
                                                     
-                                                    if bus.predictTime2 != "" {
-                                                        Text("\(bus.predictTime2)분 후")
-                                                            .foregroundColor(.red)
-                                                    }
+                                                if bus.predictTime2 != "" {
+                                                    Text("\(bus.predictTime2)분 후")
+                                                        .foregroundColor(.red)
                                                 }
                                             }
                                         }
-                                        
-                                        Divider()
                                     }
+                                        
+                                    Divider()
                                 }
                             }
                         }
@@ -137,7 +138,6 @@ struct BusView: View {
                     arrivalSoonBuses[bus] = busDataStore.busData[bus]!.arrivalSoon
                 }
                 debugPrint(busDataStore.busData)
-                isLoading.toggle()
             }
         }
     }

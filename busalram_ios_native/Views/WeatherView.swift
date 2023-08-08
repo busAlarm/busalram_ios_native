@@ -39,7 +39,7 @@ struct WeatherView: View {
                             }
                             
                             Text("\(weatherDataStore.weatherData.weather)")
-                                .font(.largeTitle)
+                                .font(.headline)
                             
                             Spacer()
                         }
