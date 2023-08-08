@@ -14,6 +14,12 @@
 		6169B4302A8223B9007E7C4C /* busalram_ios_nativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B42F2A8223B9007E7C4C /* busalram_ios_nativeTests.swift */; };
 		6169B43A2A8223B9007E7C4C /* busalram_ios_nativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B4392A8223B9007E7C4C /* busalram_ios_nativeUITests.swift */; };
 		6169B43C2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B43B2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift */; };
+		6169B4492A82250B007E7C4C /* BusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B4482A82250B007E7C4C /* BusData.swift */; };
+		6169B44B2A822B69007E7C4C /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B44A2A822B69007E7C4C /* WeatherData.swift */; };
+		6169B44E2A822BAB007E7C4C /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B44D2A822BAB007E7C4C /* RequestStatus.swift */; };
+		6169B4512A822E8C007E7C4C /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B4502A822E8C007E7C4C /* WeatherView.swift */; };
+		6169B4532A822E93007E7C4C /* BusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B4522A822E93007E7C4C /* BusView.swift */; };
+		618DA09B2A82560F00063370 /* BusCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DA09A2A82560F00063370 /* BusCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		6169B4352A8223B9007E7C4C /* busalram_ios_nativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = busalram_ios_nativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6169B4392A8223B9007E7C4C /* busalram_ios_nativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busalram_ios_nativeUITests.swift; sourceTree = "<group>"; };
 		6169B43B2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busalram_ios_nativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6169B4482A82250B007E7C4C /* BusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusData.swift; sourceTree = "<group>"; };
+		6169B44A2A822B69007E7C4C /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		6169B44D2A822BAB007E7C4C /* RequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStatus.swift; sourceTree = "<group>"; };
+		6169B4502A822E8C007E7C4C /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		6169B4522A822E93007E7C4C /* BusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusView.swift; sourceTree = "<group>"; };
+		618DA09A2A82560F00063370 /* BusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,8 @@
 		6169B41D2A8223B7007E7C4C /* busalram_ios_native */ = {
 			isa = PBXGroup;
 			children = (
+				6169B44F2A822E70007E7C4C /* Views */,
+				6169B44C2A822B9C007E7C4C /* Models */,
 				6169B41E2A8223B7007E7C4C /* busalram_ios_nativeApp.swift */,
 				6169B4202A8223B7007E7C4C /* ContentView.swift */,
 				6169B4222A8223B9007E7C4C /* Assets.xcassets */,
@@ -125,6 +139,26 @@
 				6169B43B2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift */,
 			);
 			path = busalram_ios_nativeUITests;
+			sourceTree = "<group>";
+		};
+		6169B44C2A822B9C007E7C4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6169B4482A82250B007E7C4C /* BusData.swift */,
+				6169B44A2A822B69007E7C4C /* WeatherData.swift */,
+				6169B44D2A822BAB007E7C4C /* RequestStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6169B44F2A822E70007E7C4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6169B4502A822E8C007E7C4C /* WeatherView.swift */,
+				6169B4522A822E93007E7C4C /* BusView.swift */,
+				618DA09A2A82560F00063370 /* BusCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6169B4532A822E93007E7C4C /* BusView.swift in Sources */,
+				6169B4492A82250B007E7C4C /* BusData.swift in Sources */,
+				6169B4512A822E8C007E7C4C /* WeatherView.swift in Sources */,
+				618DA09B2A82560F00063370 /* BusCardView.swift in Sources */,
 				6169B4212A8223B7007E7C4C /* ContentView.swift in Sources */,
+				6169B44E2A822BAB007E7C4C /* RequestStatus.swift in Sources */,
+				6169B44B2A822B69007E7C4C /* WeatherData.swift in Sources */,
 				6169B41F2A8223B7007E7C4C /* busalram_ios_nativeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
