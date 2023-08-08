@@ -99,6 +99,7 @@ class BusDataStore: ObservableObject {
         } catch _ as URLError {
             debugPrint("failed to convert URL")
             return .urlError
+            
         } catch _ as DecodingError {
             debugPrint("failed to decode retrieved data")
             return .decodeError
