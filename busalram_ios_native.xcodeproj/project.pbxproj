@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6169B41F2A8223B7007E7C4C /* busalram_ios_nativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B41E2A8223B7007E7C4C /* busalram_ios_nativeApp.swift */; };
+		6169B4212A8223B7007E7C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B4202A8223B7007E7C4C /* ContentView.swift */; };
+		6169B4232A8223B9007E7C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6169B4222A8223B9007E7C4C /* Assets.xcassets */; };
+		6169B4262A8223B9007E7C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6169B4252A8223B9007E7C4C /* Preview Assets.xcassets */; };
+		6169B4302A8223B9007E7C4C /* busalram_ios_nativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B42F2A8223B9007E7C4C /* busalram_ios_nativeTests.swift */; };
+		6169B43A2A8223B9007E7C4C /* busalram_ios_nativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B4392A8223B9007E7C4C /* busalram_ios_nativeUITests.swift */; };
+		6169B43C2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169B43B2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6169B42C2A8223B9007E7C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6169B4132A8223B7007E7C4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6169B41A2A8223B7007E7C4C;
+			remoteInfo = busalram_ios_native;
+		};
+		6169B4362A8223B9007E7C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6169B4132A8223B7007E7C4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6169B41A2A8223B7007E7C4C;
+			remoteInfo = busalram_ios_native;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6169B41B2A8223B7007E7C4C /* busalram_ios_native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = busalram_ios_native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6169B41E2A8223B7007E7C4C /* busalram_ios_nativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busalram_ios_nativeApp.swift; sourceTree = "<group>"; };
+		6169B4202A8223B7007E7C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6169B4222A8223B9007E7C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6169B4252A8223B9007E7C4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6169B42B2A8223B9007E7C4C /* busalram_ios_nativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = busalram_ios_nativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6169B42F2A8223B9007E7C4C /* busalram_ios_nativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busalram_ios_nativeTests.swift; sourceTree = "<group>"; };
+		6169B4352A8223B9007E7C4C /* busalram_ios_nativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = busalram_ios_nativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6169B4392A8223B9007E7C4C /* busalram_ios_nativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busalram_ios_nativeUITests.swift; sourceTree = "<group>"; };
+		6169B43B2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busalram_ios_nativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6169B4182A8223B7007E7C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6169B4282A8223B9007E7C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6169B4322A8223B9007E7C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6169B4122A8223B7007E7C4C = {
+			isa = PBXGroup;
+			children = (
+				6169B41D2A8223B7007E7C4C /* busalram_ios_native */,
+				6169B42E2A8223B9007E7C4C /* busalram_ios_nativeTests */,
+				6169B4382A8223B9007E7C4C /* busalram_ios_nativeUITests */,
+				6169B41C2A8223B7007E7C4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6169B41C2A8223B7007E7C4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6169B41B2A8223B7007E7C4C /* busalram_ios_native.app */,
+				6169B42B2A8223B9007E7C4C /* busalram_ios_nativeTests.xctest */,
+				6169B4352A8223B9007E7C4C /* busalram_ios_nativeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6169B41D2A8223B7007E7C4C /* busalram_ios_native */ = {
+			isa = PBXGroup;
+			children = (
+				6169B41E2A8223B7007E7C4C /* busalram_ios_nativeApp.swift */,
+				6169B4202A8223B7007E7C4C /* ContentView.swift */,
+				6169B4222A8223B9007E7C4C /* Assets.xcassets */,
+				6169B4242A8223B9007E7C4C /* Preview Content */,
+			);
+			path = busalram_ios_native;
+			sourceTree = "<group>";
+		};
+		6169B4242A8223B9007E7C4C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6169B4252A8223B9007E7C4C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6169B42E2A8223B9007E7C4C /* busalram_ios_nativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6169B42F2A8223B9007E7C4C /* busalram_ios_nativeTests.swift */,
+			);
+			path = busalram_ios_nativeTests;
+			sourceTree = "<group>";
+		};
+		6169B4382A8223B9007E7C4C /* busalram_ios_nativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6169B4392A8223B9007E7C4C /* busalram_ios_nativeUITests.swift */,
+				6169B43B2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift */,
+			);
+			path = busalram_ios_nativeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6169B41A2A8223B7007E7C4C /* busalram_ios_native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6169B43F2A8223B9007E7C4C /* Build configuration list for PBXNativeTarget "busalram_ios_native" */;
+			buildPhases = (
+				6169B4172A8223B7007E7C4C /* Sources */,
+				6169B4182A8223B7007E7C4C /* Frameworks */,
+				6169B4192A8223B7007E7C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = busalram_ios_native;
+			productName = busalram_ios_native;
+			productReference = 6169B41B2A8223B7007E7C4C /* busalram_ios_native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6169B42A2A8223B9007E7C4C /* busalram_ios_nativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6169B4422A8223B9007E7C4C /* Build configuration list for PBXNativeTarget "busalram_ios_nativeTests" */;
+			buildPhases = (
+				6169B4272A8223B9007E7C4C /* Sources */,
+				6169B4282A8223B9007E7C4C /* Frameworks */,
+				6169B4292A8223B9007E7C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6169B42D2A8223B9007E7C4C /* PBXTargetDependency */,
+			);
+			name = busalram_ios_nativeTests;
+			productName = busalram_ios_nativeTests;
+			productReference = 6169B42B2A8223B9007E7C4C /* busalram_ios_nativeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6169B4342A8223B9007E7C4C /* busalram_ios_nativeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6169B4452A8223B9007E7C4C /* Build configuration list for PBXNativeTarget "busalram_ios_nativeUITests" */;
+			buildPhases = (
+				6169B4312A8223B9007E7C4C /* Sources */,
+				6169B4322A8223B9007E7C4C /* Frameworks */,
+				6169B4332A8223B9007E7C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6169B4372A8223B9007E7C4C /* PBXTargetDependency */,
+			);
+			name = busalram_ios_nativeUITests;
+			productName = busalram_ios_nativeUITests;
+			productReference = 6169B4352A8223B9007E7C4C /* busalram_ios_nativeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6169B4132A8223B7007E7C4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6169B41A2A8223B7007E7C4C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					6169B42A2A8223B9007E7C4C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6169B41A2A8223B7007E7C4C;
+					};
+					6169B4342A8223B9007E7C4C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6169B41A2A8223B7007E7C4C;
+					};
+				};
+			};
+			buildConfigurationList = 6169B4162A8223B7007E7C4C /* Build configuration list for PBXProject "busalram_ios_native" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6169B4122A8223B7007E7C4C;
+			productRefGroup = 6169B41C2A8223B7007E7C4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6169B41A2A8223B7007E7C4C /* busalram_ios_native */,
+				6169B42A2A8223B9007E7C4C /* busalram_ios_nativeTests */,
+				6169B4342A8223B9007E7C4C /* busalram_ios_nativeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6169B4192A8223B7007E7C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6169B4262A8223B9007E7C4C /* Preview Assets.xcassets in Resources */,
+				6169B4232A8223B9007E7C4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6169B4292A8223B9007E7C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6169B4332A8223B9007E7C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6169B4172A8223B7007E7C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6169B4212A8223B7007E7C4C /* ContentView.swift in Sources */,
+				6169B41F2A8223B7007E7C4C /* busalram_ios_nativeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6169B4272A8223B9007E7C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6169B4302A8223B9007E7C4C /* busalram_ios_nativeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6169B4312A8223B9007E7C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6169B43C2A8223B9007E7C4C /* busalram_ios_nativeUITestsLaunchTests.swift in Sources */,
+				6169B43A2A8223B9007E7C4C /* busalram_ios_nativeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6169B42D2A8223B9007E7C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6169B41A2A8223B7007E7C4C /* busalram_ios_native */;
+			targetProxy = 6169B42C2A8223B9007E7C4C /* PBXContainerItemProxy */;
+		};
+		6169B4372A8223B9007E7C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6169B41A2A8223B7007E7C4C /* busalram_ios_native */;
+			targetProxy = 6169B4362A8223B9007E7C4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6169B43D2A8223B9007E7C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6169B43E2A8223B9007E7C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6169B4402A8223B9007E7C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"busalram_ios_native/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deblur.busalram-ios-native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6169B4412A8223B9007E7C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"busalram_ios_native/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deblur.busalram-ios-native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6169B4432A8223B9007E7C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deblur.busalram-ios-nativeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/busalram_ios_native.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/busalram_ios_native";
+			};
+			name = Debug;
+		};
+		6169B4442A8223B9007E7C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deblur.busalram-ios-nativeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/busalram_ios_native.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/busalram_ios_native";
+			};
+			name = Release;
+		};
+		6169B4462A8223B9007E7C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deblur.busalram-ios-nativeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = busalram_ios_native;
+			};
+			name = Debug;
+		};
+		6169B4472A8223B9007E7C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deblur.busalram-ios-nativeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = busalram_ios_native;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6169B4162A8223B7007E7C4C /* Build configuration list for PBXProject "busalram_ios_native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6169B43D2A8223B9007E7C4C /* Debug */,
+				6169B43E2A8223B9007E7C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6169B43F2A8223B9007E7C4C /* Build configuration list for PBXNativeTarget "busalram_ios_native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6169B4402A8223B9007E7C4C /* Debug */,
+				6169B4412A8223B9007E7C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6169B4422A8223B9007E7C4C /* Build configuration list for PBXNativeTarget "busalram_ios_nativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6169B4432A8223B9007E7C4C /* Debug */,
+				6169B4442A8223B9007E7C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6169B4452A8223B9007E7C4C /* Build configuration list for PBXNativeTarget "busalram_ios_nativeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6169B4462A8223B9007E7C4C /* Debug */,
+				6169B4472A8223B9007E7C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6169B4132A8223B7007E7C4C /* Project object */;
+}
